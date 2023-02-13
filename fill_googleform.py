@@ -9,13 +9,13 @@ browser.get('https://forms.gle/GUcqmpu7zmQ8AR7H9')
 time.sleep(3)
 
 clickLogin = browser.find_element(By.XPATH,'//*[@id="identifierId"]')
-clickLogin.send_keys("s6401012620161@email.kmutnb.ac.th")
+clickLogin.send_keys("example@gmail.com") # USERNAME
 
 clicknext = browser.find_element(By.XPATH,'//*[@id="identifierNext"]/div/button/span')
 clicknext.click()
 time.sleep(3)
 clickpassword = browser.find_element(By.XPATH,'//*[@id="password"]/div[1]/div/div[1]/input')
-clickpassword.send_keys("")
+clickpassword.send_keys("password") # PASSWORD
 
 clicklogin = browser.find_element(By.XPATH,'//*[@id="passwordNext"]/div/button/span')
 clicklogin.click()
